@@ -65,9 +65,15 @@ git remote add origin https://github.com/shashiKumar14/simple-dvc-demo.git
 git push -u origin main
 ```
 
+================================================================
 
+# coding part
 
+1)In params.yaml file add the input parameters and the output parameters and input/output paths
 
+2)Create get_data.py in src folder . It reads params from param.yaml file & process and returns the dataframe
+
+3)
 
 
 
