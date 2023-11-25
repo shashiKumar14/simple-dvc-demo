@@ -73,9 +73,13 @@ git push -u origin main
 
 2)Create get_data.py in src folder . It reads params from param.yaml file & process and returns the dataframe
 
-3)
+3)Create load_data.py in src folder . It gets the data from get_data.py in src folder . using the functions it calls and stores the csv into data/raw folder.
 
+4)In dvc.yaml file add the first stage.It has cmd,input dependencies,output paths
 
+5)dvc repro
+
+6)
 
 
 
