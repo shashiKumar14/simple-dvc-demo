@@ -27,29 +27,43 @@ install dependencies by adding below dependencies
 pip install -r requirements.txt 
 ```
 
+```bash
 touch README.md
+```
 
+```bash
 touch template.py
+```
+
 
 download the data from
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
 
 
+```bash
 git init
+```
 
+```bash
 dvc init
+```
 
+```bash
 dvc add data_given/winequality.csv
+```
 
+```bash
 git add . && git commit -m "first commit" 
+```
 
 create a new github repo
 ```bash
 git branch -M main
 git remote add origin https://github.com/shashiKumar14/simple-dvc-demo.git
 ```
-
+```bash
 git push -u origin main
+```
 
 
 
