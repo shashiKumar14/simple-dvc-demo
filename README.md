@@ -172,6 +172,8 @@ touch .github/workflows/ci-cd.yaml
 
 add the codec in ci-cd.yaml file
 
+whenever we commit the code the .github/workflows/  triggers in github Actions
+
 
 
 
