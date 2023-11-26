@@ -166,6 +166,8 @@ add the code in app.py
 
 cp saved_models/model.joblib  prediction_service/model/
 
+cp notebooks/schema.json prediction_service/
+
 mkdir -p .github/workflows
 
 touch .github/workflows/ci-cd.yaml
@@ -173,6 +175,13 @@ touch .github/workflows/ci-cd.yaml
 add the codec in ci-cd.yaml file
 
 whenever we commit the code the .github/workflows/  triggers in github Actions
+
+===============================================================================
+
+create heroku application keys insert it into secrets in github
+when we commit the code it deploys
+
+===============================================================================
 
 
 
