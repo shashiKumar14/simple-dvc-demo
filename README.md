@@ -170,7 +170,7 @@ mkdir -p .github/workflows
 
 touch .github/workflows/ci-cd.yaml
 
-
+add the codec in ci-cd.yaml file
 
 
 
