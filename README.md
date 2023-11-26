@@ -96,9 +96,79 @@ git push -u origin main
 13)To run the test cases command is : pytest -v .
 ==>inthis code writing the test cases in test_config.py .For the functions have to use  prefixed with "test_" 
 
-14)
+14)To run tox command -
+```bash
+tox
+```
+15)for rebuilding -
+```bash
+tox -r
+```
 
+16)touch setup.py and 
 
+```bash
+pip install -e .
+```
+
+To freeze the dependencies which are installed.
+```bash
+pip freeze
+```
+
+build your own package commands-
+
+```bash
+python setup.py sdist bdist_wheel
+```
+```bash
+pip install jupyterlab
+```
+
+To open the notebook using command
+```bash
+jupyter-lab notebooks
+```
+
+==>flake8 is the automatically chages the based on PEP8 standards.
+
+==>we can do by manually by using the right click on the file and click format this document.
+
+mkdir -p prediction_service/model
+
+mkdir webapp
+
+touch app.py
+
+mkdir -p webapp/static/css
+
+mkdir -p webapp/static/script
+
+touch webapp/static/css/main.css
+
+touch webapp/static/css/index.js
+
+mkdir webapp/templates
+
+touch webapp/templates/index.html
+
+touch webapp/templates/404.html
+
+touch webapp/templates/base.html
+
+adding the code in main.css,404.html,index.html,base.html
+
+we have base.html one but as many as we can  add index.html
+
+add flask,gunicorn in requirements.txt
+
+add the code in app.py
+
+cp saved_models/model.joblib  prediction_service/model/
+
+mkdir -p .github/workflows
+
+touch .github/workflows/ci-cd.yaml
 
 
 
