@@ -71,19 +71,19 @@ git push -u origin main
 
 1)In params.yaml file add the input parameters and the output parameters and input/output paths
 
-2)Create get_data.py in src folder . It reads params from param.yaml file & process and returns the dataframe
+2)Create get_data.py in simplemlapp-with-ci-dvc folder . It reads params from param.yaml file & process and returns the dataframe
 
-3)Create load_data.py in src folder . It gets the data from get_data.py in src folder . using the functions it calls and stores the csv into data/raw folder.
+3)Create load_data.py in simplemlapp-with-ci-dvc folder . It gets the data from get_data.py in simplemlapp-with-ci-dvc folder . using the functions it calls and stores the csv into data/raw folder.
 
 4)In dvc.yaml file add the first stage.It has cmd,input dependencies,output paths
 
 5)dvc repro
 
-6)Create split_data.py in src folder . It reads params from param.yaml file then takes the data from raw folder and splits it into train and test and then inserts it into processed folder.
+6)Create split_data.py in simplemlapp-with-ci-dvc folder . It reads params from param.yaml file then takes the data from raw folder and splits it into train and test and then inserts it into processed folder.
 
 7)continue 4th and 5th step
 
-8)create train_and_evaluate.py in src folder . It reads params from param.yaml file and takes the data from processed folder and it trains and evaluates the data 
+8)create train_and_evaluate.py in simplemlapp-with-ci-dvc folder . It reads params from param.yaml file and takes the data from processed folder and it trains and evaluates the data 
 
 9)continue 4th and 5th step
 

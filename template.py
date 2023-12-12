@@ -6,7 +6,7 @@ dirs = [
     os.path.join("data","processed"),
     "notebooks",
     "saved_models",
-    "src"
+    "simplemlapp-with-ci-dvc"
 ]
 
 for dir_ in dirs:
@@ -19,7 +19,7 @@ files = [
     "dvc.yaml",
     "params.yaml",
     ".gitignore",
-    os.path.join("src","__init__.py")
+    os.path.join("simplemlapp-with-ci-dvc","__init__.py")
 ]
 
 for file_ in files:

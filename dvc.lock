@@ -1,15 +1,15 @@
 schema: '2.0'
 stages:
   load_data:
-    cmd: python src/load_data.py --config=params.yaml
+    cmd: python simplemlapp-with-ci-dvc/load_data.py --config=params.yaml
     deps:
     - path: data_given/winequality.csv
       md5: ccc8d3507eb151f53f760d36abdef888
       size: 91998
-    - path: src/get_data.py
+    - path: simplemlapp-with-ci-dvc/get_data.py
       md5: 4efb393f0e0cc151464221d1319c8745
       size: 657
-    - path: src/load_data.py
+    - path: simplemlapp-with-ci-dvc/load_data.py
       md5: bf9ea6e0fcd2ef3899ba4c7d8292dec1
       size: 648
     outs:
@@ -17,12 +17,12 @@ stages:
       md5: d98e8f2eca228c11c4de1cc96866a54d
       size: 91998
   split_data:
-    cmd: python src/split_data.py --config=params.yaml
+    cmd: python simplemlapp-with-ci-dvc/split_data.py --config=params.yaml
     deps:
     - path: data/raw/winequality.csv
       md5: d98e8f2eca228c11c4de1cc96866a54d
       size: 91998
-    - path: src/split_data.py
+    - path: simplemlapp-with-ci-dvc/split_data.py
       md5: d0b79a27bd3db7325015bcec9ce3f589
       size: 1070
     outs:
@@ -33,7 +33,7 @@ stages:
       md5: 4bccf4d668cdc60115de42ba74d416ab
       size: 73633
   train_and_evaluate:
-    cmd: python src/train_and_evaluate.py --config=params.yaml
+    cmd: python simplemlapp-with-ci-dvc/train_and_evaluate.py --config=params.yaml
     deps:
     - path: data/processed/test_winequality.csv
       md5: 01718da3bd6e206060ed00667ca1a389
@@ -41,7 +41,7 @@ stages:
     - path: data/processed/train_winequality.csv
       md5: 4bccf4d668cdc60115de42ba74d416ab
       size: 73633
-    - path: src/train_and_evaluate.py
+    - path: simplemlapp-with-ci-dvc/train_and_evaluate.py
       md5: 6f4add34d08b4be577c4cf184b004cf1
       size: 2582
     params:
