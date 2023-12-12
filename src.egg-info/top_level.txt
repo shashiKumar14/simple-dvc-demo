@@ -1,3 +1,0 @@
-prediction_service
-simplemlapp-with-ci-dvc
-tests
