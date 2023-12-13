@@ -6,5 +6,6 @@ setup(
     description="its a wine Q package", 
     author="shashiKumar14", 
     packages=find_packages(),
-    license="MIT"
+    license="MIT",
+    long_description_content_type = "text/x-rst",
 )
